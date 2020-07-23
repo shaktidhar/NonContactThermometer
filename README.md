@@ -17,3 +17,11 @@ I assembled everything on a perforated PCB. It can be assembled by wiring them u
  \* I used an older version with Atmega168P. The newer version will have better graphic options using the same display. Instead of Pro Mini, Nano or Uno will be better if someone is only starting into this.  
  ** Any other display can be used too. But the codes will need modification accordingly. I prefer this sleek looking display here. Consumes very little power too, so when I make it portable, that will come in handy.  
  *** I used an external 5V power supply to power this equipment. To have flexibility, I put both options so that I can use it on the go as well using a mobile power bank. It can be further improvised and/or customized to individual's requirements.  
+
+Arduino libraries used:  
+
+Adafruit MLX90614  
+FastLED (By Daniel Garcia)  
+SSD1306Ascii (By Bill Greiman, replace with Adafruit SSD1306 if using Arduino boards based on Atmega 328 or better)  
+
+P.S.: If using the Arduino Pro Mini Atmega328, you should go with the graphics oled library. 
