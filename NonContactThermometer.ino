@@ -127,7 +127,7 @@ void loop()
     leds[0] = CRGB(0, 0, 255); 
     oled.println("All seems cool"); 
   } else if (dTemp < 36.0 ) { 
-    // ifa normal human being , switch on only the greenlight. 
+    // if a normal human being, switch on only the greenlight. 
     leds[0] = CRGB(0, 255, 0);
     oled.println("Human*, Normal"); 
   } else if (dTemp <= 40.0 ) { 
@@ -135,7 +135,7 @@ void loop()
     leds[0] = CRGB(255, 0, 0);
     oled.println("Human*, Unwell"); 
   } else if (dTemp > 40.0) { 
-    // If temperature exceeds human surface temperetaure, switch on white light. 
+    // If temperature exceeds the highest possible human surface temperetaure, switch on white light. 
     leds[0] = CRGB(255, 255, 255);
     oled.println("Not Human, HOT"); 
   }
